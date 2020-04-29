@@ -1,0 +1,56 @@
+.body {
+  background: rgba(212, 161, 183, 0.555);
+  background: radial-gradient(#ffffff, #2f3031);
+  margin: 100px 200px;
+
+}
+
+.picture {
+  width: 250px;
+  float: right;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(48, 9, 9, 0.651);
+
+}
+
+a:hover {
+  color: rgba(48, 56, 61, 0.966);
+}
+
+.header {
+  font-family: cursive;
+  margin-bottom: 150px;
+  padding: 50px 50px;
+
+}
+
+.h2 {
+  font-family: cursive;
+  padding: 50px;
+}
+
+.cont {
+  background-color: rgba(143, 181, 188, 0.397);
+}
+
+main {
+  margin-bottom: 100px;
+  padding: 40px;
+}
+
+h3 {
+  font-family: cursive;
+  text-align: center;
+}
+
+.img1 {
+  width: 40px;
+
+}
+
+.img2 {
+  text-align: center;
+}
