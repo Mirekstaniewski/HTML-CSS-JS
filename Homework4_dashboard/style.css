@@ -1,0 +1,126 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #607d8bd2;
+
+}
+
+.sidenav {
+  grid-area: sidenav;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(57, 57, 68, 0.582) 0%, rgba(100, 100, 134, 0.795) 35%, rgba(54, 101, 110, 0.61) 100%);
+}
+
+.main {
+  grid-area: main;
+  background: rgb(238, 228, 233);
+  background: radial-gradient(circle, rgba(238, 228, 233, 1) 15%, rgba(235, 226, 231, 1) 42%, rgba(141, 155, 171, 0.8687850140056023) 100%);
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #607d8b;
+}
+
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background-color: #648ca6;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  grid-area: sidenav;
+  background-color: #394263;
+}
+
+.sidenav__list {
+  padding: 0;
+  margin-top: 85px;
+  list-style-type: none;
+}
+
+.sidenav__list-item {
+  padding: 20px 20px 20px 40px;
+  color: #ddd;
+}
+
+.sidenav__list-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 20px;
+  height: 150px;
+  background-color: #c5cfe2;
+  color: rgb(78, 92, 105);
+}
+
+.main-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  grid-auto-rows: 94px;
+  grid-gap: 20px;
+  margin: 20px;
+}
+
+.overviewcard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #bdbdbd;
+}
+
+.main-cards {
+  column-count: 2;
+  column-gap: 20px;
+  margin: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #41505fa8;
+  margin-bottom: 20px;
+  -webkit-column-break-inside: avoid;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.card:first-child {
+  height: 485px;
+}
+
+.card:nth-child(2) {
+  height: 200px;
+}
+
+.card:nth-child(3) {
+  height: 265px;
+}
