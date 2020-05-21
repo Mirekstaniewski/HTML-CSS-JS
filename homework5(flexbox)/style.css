@@ -5,7 +5,7 @@ body {
 
 .container {
   display: flex;
-  height: calc(100vh - 17vh);
+  height: calc(100vh - 16vh);
 
   margin-left: auto;
   margin-right: auto;
@@ -47,8 +47,8 @@ body {
   font-size: 15px;
 }
 
-.title,
-.metha,
+
+
 .nav,
 .news,
 .content {
@@ -75,6 +75,9 @@ body {
 .metha {
   background-color: #bdbdbd;
   height: 15%;
+  display: flex;
+  justify-content: space-around;
+
 }
 
 .nav ul li:hover {
@@ -109,4 +112,8 @@ a:hover {
 
 #curentLink {
   background-color: #bdbdbd;
+}
+
+.logo {
+  height: 50px;
 }
