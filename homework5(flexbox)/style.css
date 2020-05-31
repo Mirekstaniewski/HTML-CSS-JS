@@ -73,10 +73,12 @@ body {
 }
 
 .metha {
+  width: 100%;
   background-color: #bdbdbd;
   height: 15%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
 }
 
