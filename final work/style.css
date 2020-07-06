@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+
 body {
   background-color: #f9fafa;
   margin: 0px;
@@ -44,8 +52,11 @@ body {
 a {
   color: #424242;
   text-align: center;
-  padding: 1em 1em;
   text-decoration: none;
+}
+
+.amenu {
+  padding: 1em 1em;
 }
 
 a:hover {
@@ -143,7 +154,6 @@ h2 {
   font-size: 3.2em;
   font-weight: bold;
   margin: 0px;
-  padding: 0px;
 }
 
 h4 {
@@ -172,6 +182,7 @@ h5 {
 .button {
   border: 4px solid #424242;
   padding: 1em 2em;
+  text-align: center;
 }
 
 .button:hover {
@@ -225,77 +236,98 @@ h5 {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(14, 1fr);
-  grid-gap: 1em 21vh;
+  padding: 30px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1em 8em;
+  grid-auto-rows: 15em;
+  border-bottom: 2px solid black;
 }
 
 .insta1 {
   background: url(./img/flowers2.jpg) no-repeat;
-  width: 40vh;
-  height: 40vh;
+  width: 15em;
   grid-column-start: 2;
   grid-column-end: 4;
 }
 
 .insta2 {
-  background: url(./img/cream.jpg);
-  width: 40vh;
-  height: 40vh;
+  background: url(./img/cream.jpg) no-repeat;
+  width: 15em;
   grid-column-start: 4;
   grid-column-end: 6;
 }
 
 .insta3 {
   background: url(./img/basick.jpg) no-repeat;
-  width: 40vh;
-  height: 40vh;
+  width: 15em;
   grid-column-start: 6;
   grid-column-end: 8;
 }
 
 .insta4 {
-  background: url(./img/flowers6.jpg);
-  width: 40vh;
-  height: 40vh;
+  background: url(./img/flowers6.jpg) no-repeat;
+  width: 15em;
   grid-column-start: 8;
   grid-column-end: 10;
 }
 
 .insta5 {
-  background: url(./img/flowers3.jpg);
-  width: 40vh;
-  height: 40vh;
+  background: url(./img/flowers3.jpg) no-repeat;
+  width: 15em;
   grid-column-start: 2;
   grid-column-end: 4;
 }
 
 .insta6 {
-  background: url(./img/flowers4.jpg);
-  width: 40vh;
-  height: 40vh;
+  background: url(./img/flowers4.jpg) no-repeat;
+  width: 15em;
   grid-column-start: 4;
   grid-column-end: 6;
 }
 
 .insta7 {
-  background: url(./img/cream.jpg);
-  width: 40vh;
-  height: 40vh;
+  background: url(./img/cream.jpg) no-repeat;
+  width: 15em;
   grid-column-start: 6;
   grid-column-end: 8;
 }
 
 .insta8 {
-  background: url(./img/basick.jpg);
-  width: 40vh;
-  height: 40vh;
+  background: url(./img/basick.jpg) no-repeat;
+  width: 15em;
   grid-column-start: 8;
   grid-column-end: 10;
 }
 
-.insta-button {
-  grid-column-start: 5;
-  grid-column-end: 8;
-  text-align: center;
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
 
+.lifoot {
+  color: #424242;
+  text-decoration: none;
+  text-align: left;
+}
+
+.footbutton {
+  border: 0.2em solid #424242;
+  padding-top: 0, 4em;
+  padding-bottom: 0.4em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  background-color: #576855;
+  color: white;
+}
+
+.footbutton:hover {
+  border: 0.3em solid #424242;
+  padding-left: 1.6em;
+  padding-right: 1.6em;
+  background-color: #5363520a;
+}
+
+input {
+  margin-bottom: 1em;
+  border: 4px solid #424242;
 }
