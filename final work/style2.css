@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+}
+
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+
+body {
+  background-color: #f9fafa;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  letter-spacing: .4px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-gap: 1em;
+}
+
+.promotion {
+  grid-column: span 15;
+  text-align: center;
+  padding: 1em;
+  background-color: #adbcab;
+  color: #424242;
+}
+
+.header {
+  grid-column: 2 / span 13;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.navbar {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap-reverse;
+}
+
+.navbar li {
+  font-size: 0.9em;
+}
+
+a {
+  color: #424242;
+  text-align: center;
+  text-decoration: none;
+}
+
+.amenu {
+  padding: 1em 1em;
+}
+
+a:hover {
+  color: rgb(5, 5, 5);
+  text-shadow: 0px 0px 1px black;
+}
+
+h1 {
+  letter-spacing: 0.3vw;
+  padding: 2vw 2vw;
+  color: #424242;
+  border: 1vw solid #424242;
+  text-align: start;
+}
+
+.icon {
+  width: 2em;
+}
+
+h2 {
+  letter-spacing: .1em;
+  color: #424242;
+  font-size: 3.4vw;
+  font-weight: bold;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+h4 {
+  letter-spacing: .1em;
+  color: #424242;
+  font-size: 3vw;
+  font-weight: 400;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+h5 {
+  letter-spacing: .3em;
+  color: #424242;
+  font-size: 1vw;
+  font-weight: 400;
+
+
+}
+
+.goods {
+  width: 25vw;
+  height: 25vw;
+  transition-property: all;
+  transition-duration: .2s;
+  margin: 5px;
+}
+
+.goods:hover {
+  width: 28vw;
+  height: 28vw;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  margin-bottom: 5vw;
+  padding-bottom: 7vw;
+}
+
+.plus-minus {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 10px;
+}
+
+span {
+  cursor: pointer;
+}
+
+.minus,
+.plus {
+  font-size: 30px;
+  color: #424242;
+}
+
+input {
+  text-align: center;
+  font-size: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 15vw;
+  display: inline-block;
+
+}
+
+.btn {
+  border: 1px solid black;
+  background-color: #576855;
+  text-align: center;
+  width: 25vw;
+  height: 3vw;
+  padding: 0.5vw;
+  margin: 0.5vw;
+
+}
+
+.cardbtn {
+  text-align: center;
+  color: whitesmoke;
+  font-size: 1vw;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.lifoot {
+  color: #424242;
+  text-decoration: none;
+  text-align: left;
+}
+
+.footbutton {
+  border: 0.3vw solid #424242;
+  padding-top: 0, 4vw;
+  padding-bottom: 0.4vw;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  background-color: #576855;
+  color: white;
+}
+
+.footbutton:hover {
+  border: 0.3em solid #424242;
+  padding-left: 1.6em;
+  padding-right: 1.6em;
+  background-color: #5363520a;
+}
+
+input {
+  margin-bottom: 1vw;
+  border: 0.5vw solid #424242;
+}
+
+.socNetworkLogo {
+  width: 2em;
+}
+
+#sticky {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: sticky;
+  bottom: 10em;
+  margin-right: 2em;
+  min-height: 4em;
+  z-index: 20;
+
+}
